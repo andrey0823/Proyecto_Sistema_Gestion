@@ -1,0 +1,45 @@
+Estructura Principal:
+
+1. Iniciar aplicación
+2. Mostrar pantalla de login
+3. Validar credenciales (usuario y contraseña)
+4. Si las credenciales son incorrectas, volver al paso 2
+5. Si son correctas, verificar rol del usuario:
+   │
+   ├── Si el rol es Administrador:
+   │    │
+   │    ├── Mostrar menú principal con opciones:
+   │    │    1. Gestionar usuarios
+   │    │    2. Gestionar tareas
+   │    │    3. Consultar avances
+   │    │    4. Salir
+   │    │
+   │    ├── Si selecciona 1 (Gestionar usuarios):
+   │    │    │
+   │    │    ├── Submenú:
+   │    │        1. Editar roles de usuarios
+   │    │        2. Eliminar usuarios
+   │    │        3. Volver al menú principal
+   │    │
+   │    ├── Si selecciona 2 (Gestionar tareas):
+   │    │    │
+   │    │    ├── Submenú:
+   │    │        1. Crear nueva tarea
+   │    │        2. Asignar/Reasignar tarea
+   │    │        3. Modificar estado de tarea
+   │    │        4. Volver al menú principal
+   │    │
+   │    └── Si selecciona 3 (Consultar avances):
+   │         Mostrar listado de tareas con progreso
+   │
+   └── Si el rol es Técnico:
+        │
+        ├── Mostrar menú principal con opciones:
+        │    1. Actualizar perfil
+        │    2. Cambiar contraseña
+        │    3. Gestionar mis tareas
+        │    4. Salir
+        │
+        └── Si selecciona 3 (Gestionar tareas):
+               Mostrar tareas asignadas y permitir cambiar estado
+               (Pendiente → En progreso → Completada)
